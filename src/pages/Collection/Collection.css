@@ -1,0 +1,144 @@
+.Collection {
+  margin-top: 20px;
+}
+
+.Collection header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  white-space: normal;
+}
+
+.Collection header .filter-year {
+  background: #f6f6f4;
+  color: #6f6ebb;
+  font-size: 1rem;
+  border: 2px solid #6f6ebb;
+  border-radius: 2px;
+}
+
+.Collection .c-test-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 10px -10px;
+}
+
+.Collection .c-test {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 200px;
+  width: 280px;
+  background: #fefffe;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 7px 5px -7px #c8cdd3;
+  box-shadow: 0 7px 5px -7px #c8cdd3;
+  transition: 250ms ease;
+}
+
+.Collection .c-test:active {
+  transform: translateY(-5px);
+}
+
+.Collection .c-test h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.Collection .c-test p {
+  font-size: 0.8rem;
+  margin: 15px 0;
+}
+
+.Collection .c-test span {
+  display: inline-block;
+  font-size: 0.6rem;
+  background: #f6f6f4;
+  color: #666769;
+  padding: 4px;
+  margin: 5px 5px 5px 0;
+}
+
+.Collection .coll-test-loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.Collection .coll-test-loader p {
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.Collection .coll-test-loader img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .Collection {
+    margin-top: 50px;
+  }
+
+  .Collection header span {
+    font-size: 1rem;
+  }
+
+  .Collection header .filter-year {
+    font-size: 0.8rem;
+    border-width: 1px;
+  }
+
+  .Collection .c-test {
+    height: 180px;
+  }
+
+  .Collection .c-test h4 {
+    margin-bottom: 20px;
+  }
+
+  .Collection .c-test p {
+    margin: 10px 0;
+  }
+
+  .Collection .coll-test-loader p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .Collection .c-test {
+    width: calc(100vw - 40px);
+  }
+}

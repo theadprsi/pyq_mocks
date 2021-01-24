@@ -1,0 +1,132 @@
+.app-drawer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  background: #fefffe;
+  -webkit-box-shadow: 7px 0 5px -7px #c8cdd3;
+  box-shadow: 7px 0 5px -7px #c8cdd3;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.app-drawer nav .app-logo-cont {
+  z-index: 10;
+  position: sticky;
+  top: -20px;
+  left: 0;
+  right: 0;
+  background: #fefffe;
+}
+
+.app-drawer nav .app-logo {
+  margin: 20px 0;
+  height: 40px;
+}
+
+.app-drawer nav li a.active {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.app-drawer nav li a.active img {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.app-drawer nav ul {
+  list-style: none;
+  margin: 10px 0 40px;
+  text-align: left;
+}
+
+.app-drawer nav ul li a {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 20px;
+  margin: 10px;
+  opacity: 0.7;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.app-drawer nav ul li img {
+  width: 15px;
+  height: 15px;
+  margin-right: 40px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.app-drawer footer {
+  width: 190px;
+  padding: 20px;
+  margin-top: 60px;
+  background: #f6f6f4;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.app-drawer footer img {
+  width: 100px;
+}
+
+.app-drawer footer p {
+  font-size: 0.8rem;
+  margin: 20px 0;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.app-drawer footer button {
+  padding: 0.7em 1.8em;
+  background: #6f6ebb;
+  color: #fefffe;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.app-drawer footer button img {
+  margin-left: 10px;
+  float: right;
+  height: 15px;
+  width: 15px;
+}
+
+.app-drawer footer button:hover {
+  background: #585895;
+}
+
+#share-link {
+  z-index: -100;
+  position: fixed;
+  top: -1000px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .app-drawer {
+    z-index: 30;
+    position: fixed;
+    display: none;
+  }
+
+  .app-drawer.active {
+    display: flex;
+  }
+
+  .app-drawer footer {
+    margin-top: 30px;
+  }
+}

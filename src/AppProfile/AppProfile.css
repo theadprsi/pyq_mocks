@@ -1,0 +1,155 @@
+.app-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  background: #fefffe;
+  -webkit-box-shadow: -7px 0 5px -7px #c8cdd3;
+          box-shadow: -7px 0 5px -7px #c8cdd3;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.app-profile button {
+  margin: 40px auto 0;
+  padding: 0.7em 1.8em;
+  background: #6f6ebb;
+  color: #fefffe;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+
+.app-profile button img {
+  margin: 0 0 0 10px;
+  float: right;
+  height: 15px;
+  width: 15px;
+  overflow: hidden;
+}
+
+.app-profile button:hover {
+  background: #585895;
+}
+
+.app-profile .user {
+  margin: 20px 0 40px;
+}
+
+.app-profile .user img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.app-profile .user p {
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.app-profile .user span {
+  display: block;
+  font-size: 0.7rem;
+  color: #666769;
+}
+
+.app-profile .rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 250px;
+  background: #f6f6f4;
+  padding: 20px;
+  text-align: left;
+}
+
+.app-profile .rank p {
+  margin-right: 20px;
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.app-profile .rank p span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.app-profile .rank p span:nth-child(1) {
+  color: #fe616f;
+}
+
+.app-profile .rank p span:nth-child(2) {
+  color: #28d893;
+}
+
+.app-profile .rank img {
+  width: 50px;
+}
+
+.app-profile .top-score {
+  width: 250px;
+  text-align: left;
+  margin: 60px 0 20px;
+}
+
+.app-profile .top-score h3 {
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.app-profile .top-score img {
+  height: 15px;
+  width: 15px;
+  float: right;
+}
+
+.app-profile .top-score-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  font-size: 0.8rem;
+}
+
+.app-profile .top-score-chart .tsc-meter {
+  position: relative;
+  padding: 2px 75px;
+  margin: 0 10px;
+  background: #c8cdd3;
+  border-radius: 5px;
+}
+
+.app-profile .top-score-chart .tsc-meter div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #6f6ebb;
+  border-radius: 5px;
+}
+
+.app-profile .top-score-chart samp {
+  color: #6f6ebb;
+}
