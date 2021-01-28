@@ -1,3 +1,3 @@
 # PYQ Mocks
 
-#### React Js, Rest API
+#### React JS, Rest API
